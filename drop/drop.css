@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #eff0f4;
+
+}
+
+.drop-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.drop-container .drop{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05), 25px 35px 20px rgba(0, 0, 0, 0.05), 25px 30px 30px rgba(0, 0, 0, 0.05), inset -20px -20px 25px rgba(255, 255, 255, 0.9);
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50% 50% 33% 67% / 51% 54% 46% 49% ;
+}
+
+.drop-container .drop:hover {
+border-radius: 50%;
+}
+
+.drop-container .drop::before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 85px;
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    opacity: 0.9;
+    border-radius: 50%;
+    }
+
+    .drop-container .drop::after {
+        content: '';
+        position: absolute;
+        top: 90px;
+        left: 110px;
+        width: 15px;
+        height: 15px;
+        background: #fff;
+        opacity: 0.9;
+        border-radius: 50%;
+        }
+
+        .conte {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            gap: 15px;
+        }
+
+        .drop-container .drop .conte {
+            position: relative;
+            color: #333;
+            font-size: 1.5rem;
+        }
+
+        .drop-container .drop .conte {
+            position: relative;
+            color: #333;
+            font-size: 1.5rem;
+        }
+
+        .drop-container .drop .conte form{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        input {
+            border: none;
+            box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1),
+            inset -2px -5px 10px rgba(0, 0, 0, 0.05), 
+            15px 15px 10px rgba(0, 0, 0, 0.05), 
+            inset -20px -20px 25px rgba(255, 255, 255, 0.025);
+            padding: 0.5rem;
+            border-radius: 5px;
+            outline: none;
+            background: transparent;
+            width: 100%;
+            font-size: 1rem;
+            padding: 10px 15px;
+        }
+
+        input::before {
+            content: '';
+            position: absolute;
+            top: 8px;
+            left: 50%;
+            transform: translate(-50%);
+            width: 65%;
+            height: 5px;
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        .drop-container .drop .conte form .username{
+            position: relative;
+            width: 225px;
+            
+        }
+
+        .btn{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        button {
+            padding: 0.5rem;
+            cursor: pointer;
+            border: none;
+            box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05), 25px 35px 20px rgba(0, 0, 0, 0.05), 25px 30px 30px rgba(0, 0, 0, 0.05), inset -20px -20px 25px rgba(255, 255, 255, 0.9);
+            border-radius: 6px;
+            color: white;
+            font-size: 1rem;
+            background: #ff0f5b;
+            font-weight: bolder;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+            transition: 0.5s;
+        }
+
+        button:hover {
+            width: 150px;
+        }
+
+.forgot {
+    position: absolute;
+    right: -10px;
+    font-weight: bold;
+    bottom: 0px;
+    width: 120px;
+    height: 120px;
+    background: #c61dff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+text-decoration: none;
+color: white;
+line-height: 1.2em;
+letter-spacing: 0.1em;
+font-size: 0.8em;
+transition: 0.25s;
+box-shadow: inset 10px 10px 10px rgba(190, 1, 254, 0.05), 
+15px 25px 10px rgba(190, 1, 254, 0.1), 
+15px 20px 20px rgba(190, 1, 254, 0.1), 
+inset -10px -10px 15px rgba(255, 255, 255, 0.5);
+border-radius: 24% 76% 57% 43% / 75% 77% 23% 25% ;
+}
+
+.forgot:hover {
+border-radius: 50%;
+border-bottom: 1px solid orangered;
+}
+
+.forgot::before{
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0.45;
+}
+
+.signup {
+    position: relative;
+    right: -50px;
+    font-weight: bold;
+    bottom: 0px;
+    width: 100px;
+    height: 120px;
+    background: #014bff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+text-decoration: none;
+color: white;
+line-height: 1.2em;
+letter-spacing: 0.1em;
+font-size: 0.8em;
+transition: 0.25s;
+box-shadow: inset 10px 10px 10px rgba(190, 1, 254, 0.05), 
+15px 25px 10px rgba(190, 1, 254, 0.1), 
+15px 20px 20px rgba(190, 1, 254, 0.1), 
+inset -10px -10px 15px rgba(255, 255, 255, 0.5);
+border-radius: 83% 17% 2% 98% / 30% 39% 61% 70%  ;
+}
+
+.signup:hover {
+    border-radius: 50%;
+    border-bottom: 1px solid orangered;
+    }
+
+    .signup::before{
+        content: '';
+        position: absolute;
+        top: 15px;
+        left: 30px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #fff;
+        opacity: 0.45;
+    }
+
+ @media screen and (max-width: 468px){
+    .drop-container{
+        transform: scale(0.8);
+        display: block;
+    }
+
+    .forgot {
+        right: 0px;
+        top: -100px;
+    }
+ }   
+
+
+
+
+
